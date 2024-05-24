@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="robust-fitness-kolkata.JPG" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Robust Fitness | Home</title>
+</head>
+<style>
+    @font-face {
+        font-family: "Big Caslon";
+        src: url("path/to/BigCaslon.woff2") format("woff2"),
+          url("path/to/BigCaslon.woff") format("woff");
+      }
+    body{
+        background-color: #DF7F7F;
+        color:black;
+        max-width: 100%  !important;
+        overflow-x: hidden  !important;
+    }
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .fade-in {
+      animation: fadeIn 1.7s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+    }
+
+
+    #hero{
+      font-weight: bolder;
+      font-family: 'Lora', sans-serif;
+    }
+
+    #hero h1{
+      font-size:80px;
+      margin-left:20px;
+      margin-top:250px;
+      line-height: 105px;
+    }
+
+    .highlight{
+      background-color:#BF5A5A;
+      border-radius:80px;
+      padding:15px;
+      cursor:pointer;
+      transition: box-shadow 0.5s ease;
+    }
+
+    .highlight:hover{
+        box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    #hero p{
+      font-size:20px;
+      margin-left:20px;
+    }
+
+    .enroll{
+      background-color: rgba(0,0,0,0);
+      font-family: bolder;
+      font-size:25px;
+      font-family: 'Lora', sans-serif;
+      border-radius:30px;
+      padding:5px;
+      margin-left:20px;
+      width:260px;
+      height: 70px;
+      color:black;
+      border:1px solid black;
+      transition:all 0.7s;
+    }
+
+
+    .enroll:hover{
+      background-color:#EEDC82;
+      box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .hh{
+      height:1.5px;
+      width:50%;
+      text-align: center;
+      background-color: black;
+      color:black;
+      display:block;
+      margin:auto;
+    }
+
+    .about h1{
+      margin-left:20px;
+      font-size:70px;
+      font-family:'Lora',sans-serif;
+      text-decoration: underline;
+    }
+
+    .about p{
+      margin-left:20px;
+      width:65%;
+      font-size:18px;
+    }
+
+    .why{
+      font-family: 'Lora', sans-serif;
+    }
+    .why h1{
+      font-size:67px;
+      margin-left:20px;
+      /* text-align:center; */
+    }
+
+    .why p{
+      width:45%;
+      /* text-align: center; */
+      margin-left:290px;
+      font-size:25px;
+      margin-left:20px;
+    }
+
+    .about{
+      justify-content: center;
+    }
+
+    .img-container{
+      display:flex;
+      flex-wrap:wrap;
+      flex-direction: row;
+      padding:10px;
+    }
+
+    .img-container img{
+      height:200px;
+      width:300px;
+      border-radius:20px;
+      cursor:pointer;
+      display:block;
+      margin-top: 20px;
+      margin: 20px;
+      margin:auto;
+    }
+
+    .client h1{
+      text-align: center;
+      font-family: 'Merriweather', sans-serif;
+      font-size:40px;
+    }
+
+    .client h3{
+      font-size:29px;
+      font-family: 'Lora', sans-serif;
+      text-align: center;
+    }
+
+
+
+    .person{
+      text-align:center;
+      font-family: 'Lora', sans-serif;
+      font-size:20px;
+    }
+
+    #this{
+      width:55%;
+    }
+
+
+
+    .faq h1{
+      font-family: 'Lora', sans-serif;
+      font-size:65px;
+      text-align: center;
+    }
+
+    .faq p{
+      text-align: center;
+      font-size: 19px;
+      font-family: 'Merriweather', sans-serif;
+    }
+    .accordion-button{
+      background-color:rgba(0,0,0,0);
+      border:none;
+    }
+    #something{
+      width:900px;
+      border:none;
+      display:block;
+      margin: auto;
+      background-color: rgba(0,0,0,0);
+    }
+    #faqAccordion{
+      justify-content: center;
+    }
+
+    .chat h1{
+        font-family: 'Lora', sans-serif;
+        font-size: 55px;
+    }
+
+    .chat p{
+        font-family: 'Raleway', sans-serif;
+        font-size:20px;
+      }
+    
+
+
+      .reviews h1,
+      h4 {
+        font-family: "Lora", sans-serif;
+      }
+      .reviews h1 {
+        text-align: center;
+      }
+
+      .good {
+        width: 50%;
+        margin: auto;
+        display: block;
+      }
+
+      .good2 {
+        margin-left: 20px;
+        font-size: 20px;
+        text-align: left;
+      }
+      .good p {
+        font-size: 20px;
+      }
+      .good2 h1 {
+        font-size: 25px;
+        font-family: "Lora", sans-serif;
+        width: 50%;
+      }
+
+
+
+    @media screen and (max-width: 1645px)  {
+      .why p{
+        width:98%;
+        margin-left:0px;
+      }
+
+      #this,
+      .just p{
+        width:98%;
+        margin-left:0px;
+      }
+
+      #something{
+        width: 67%;
+        margin-left:0px;
+      }
+      body{
+        max-width: 100%  !important;
+        overflow-x: hidden  !important;
+      }
+      .good {
+          width: 100%;
+        }
+      .good2 h1 {
+          font-family: "Lora", sans-serif;
+          width: 100%;
+          font-size: 30px;
+      }
+    }
+
+</style>
+<body class="fade-in">
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/"><b>Robust Fitness</b></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/price">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/contact">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+      <div id="hero">
+        <br>
+        <br>
+        <h1>Robust Fitness,<br>Unleash Your <span class="highlight">Strength</span></h1>
+        <br>
+        <p>Robust Fitness: Where Strength Thrives. Join us to unlock your full potential and achieve your<br>fitness goals with expert guidance and a supportive community.</p>
+        <br>
+        <a href="/price"><button class="enroll">Enroll Now <img src="https://cdn.hugeicons.com/icons/arrow-right-02-stroke-rounded.svg" alt="arrow-right-02" width="34" height="24" /></button></a>
+      </div>
+      <br>
+      <br>
+
+      <h1 class="hh"></h1>
+      <br>
+      <br>
+      <div class="about">
+        <br>
+        <br>
+        <br>
+        <h1 style="text-align: center;">Fitness Haven</h1>
+        <br>
+        <br>
+        <div class="img-container">
+          <img src="gym2.png" style="margin-top:20px;">
+          <img src="gym3.png" style="margin-top:20px;">
+          <img src="gym4.png" style="margin-top:20px;">
+          <img src="gym5.png" style="margin-top:20px;">
+        </div>
+        <br>
+        <br>
+        <br>
+        <a href="/contact" style="text-decoration: none; color:black;"><button class="enroll" style="display: block; margin:auto;">Contact Us  <img src="https://cdn.hugeicons.com/icons/call-outgoing-02-stroke-rounded.svg" alt="call-outgoing-02" width="24" height="24" /></button></a>
+      </div>
+      <div id="cont">
+      <br>
+      <br>
+      <br>
+      <br>
+      <h1 class="hh" id="colorchangehere"></h1>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div class="why">
+        <h1>Why Choose Us?</h1>
+        <br>
+        <br>
+        <br>
+        <br>
+        <p class="here">
+          At Robust Fitness, we're not just another gym; we're your partners in achieving your fitness goals and transforming your life. What sets us apart is our unwavering commitment to providing you with an unparalleled fitness experience. Our state-of-the-art facilities boast premium equipment meticulously curated to cater to all fitness levels and preferences, ensuring that you have everything you need to succeed on your journey to better health. But it's not just about the equipment; it's about the people. Our team of experienced and certified trainers is dedicated to your success, offering expert guidance, motivation, and support every step of the way. Whether you're a seasoned athlete or new to fitness, we'll work with you to develop personalized training programs tailored to your unique goals and abilities. But Robust Fitness is more than just a place to work out; it's a community. Joining Robust Fitness means joining a supportive and inclusive community of like-minded individuals who share your passion for health and wellness. Here, you'll find not only a place to sweat but also a place to connect, grow, and thrive. With Robust Fitness, you're not just joining a gym; you're joining a family. So why choose us? Because we're not just here to help you reach your goals; we're here to help you exceed them.
+        </p>
+        
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div class="reviews fade-in-on-scroll">
+        <h1
+          style="
+            width: 45%;
+            height: 1.5px;
+            text-align: center;
+            color: black;
+            background-color: black;
+            margin-left: 30%;
+          "
+        ></h1>
+        <br />
+        <h1>Well don't just take our word,</h1>
+        <br />
+        <br />
+        <br />
+        <div class="good">
+          <h1 style="text-align: center">
+            "Kolkata's premier fitness destination, this gym offers a stellar ambiance, pristine cleanliness, and cutting-edge equipment. It's a place where motivation thrives, thanks to dedicated trainers and staff who provide exceptional service. Backed by their expertise and humility, achieving fitness goals becomes a seamless journey."
+          </h1>
+          <br />
+          <p style="text-align: center">
+            - Shabbir Ali Zia
+          </p>
+        </div>
+        <br />
+        <br />
+      </div>
+      <br />
+      <br />
+      <br />
+      <br />
+      <div class="good2">
+        <h1>
+          "This gym sets the standard for excellence with its meticulous maintenance and comprehensive equipment selection. The management prioritizes both upkeep and hygiene, ensuring a top-tier experience for members. It's undoubtedly one of the finest gyms in town."
+        </h1>
+        <br />
+        <p>
+          - Mohsin Khan
+        </p>
+      </div>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+    </div>
+    </div>
+    <br>
+    <br>
+    <h1 class="hh" id="colorchangehere"></h1>
+    <br>
+    <br>
+    <br>
+    <div class="faq">
+      <h1>FAQs</h1>
+      <br>
+      <p>We're here to answer your questions</p>
+      <br>
+      <br>
+      <div class="accordion" id="faqAccordion">
+        <div class="accordion-item" id="something">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+              What are your opening hours?
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Our gym is open from Monday to Saturday, from 6:00 AM to 10:00 PM. We are closed on Sundays.
+            </div>
+          </div>
+        </div>
+        <br>
+      
+        <br>
+        <div class="accordion-item" id="something">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Do you offer personal training sessions?
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Yes, we offer personalized training sessions with certified trainers. You can book a session based on your availability.
+            </div>
+          </div>
+        </div>
+        <br>
+        
+        <br>
+        <div class="accordion-item" id="something">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Where is this gym located? How can I enroll?
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Address: Prasad Square Building, 164, Acharya Jagdish Chandra Bose Rd, Entally, Kolkata, West Bengal 700014. <br>To enroll, you can either fill up a form on <a href="/book.html" style="color:black;">our website</a> and make the payment in full when you are at the gym.
+            </div>
+          </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="chat">
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1 style="text-align: left; margin-left:20px;">Let's get in touch!</h1>
+    <br>
+    <br>
+    <a href="https://www.instagram.com/robustfitgym/" style="color:black; text-decoration: none;" target="_blank"><p style="text-align: left; margin-left:20px;">Our Instagram: <img src="https://cdn.hugeicons.com/icons/instagram-stroke-rounded.svg" alt="instagram" width="24" height="24" /></p></a>
+    <br>
+    <p style="text-align: left; margin-left:20px; font-size:25px;">For any inquiries or further assistance, please don't hesitate to send us <a href="/contact" target="_blank" style="color:black; text-decoration:underline;">an email</a></p>
+    <br>
+    </div>
+      <script>
+        const cont = ()=>{
+          window.addEventListener("scroll", function () {
+          var contSection = document.getElementById("cont");
+          var contPosition = contSection.getBoundingClientRect().top;
+          var screenPosition = window.innerHeight / 1.5;
+          const abc = ()=>{
+            if (contPosition < screenPosition) {
+            document.querySelector(".here").classList.add("fade-in");
+            document.body.style.transition = "background-color 1.5s ease-in-out";
+            document.body.style.backgroundColor = "#FFEC8B";
+          }
+          else {
+            document.body.style.transition = "background-color 1.5s ease-in-out";
+            document.body.style.backgroundColor = ""; // Reset to default or another color
+          }
+          }
+          abc()
+          
+        });
+        }
+  
+  
+        cont()
+      </script>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>
